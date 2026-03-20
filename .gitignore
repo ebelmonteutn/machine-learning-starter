@@ -205,3 +205,19 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Machine Learning artifacts
+# Keep repository lightweight by ignoring local datasets and generated model outputs.
+data/raw/
+data/interim/
+data/processed/
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+models/*.pth
+models/*.onnx
+checkpoints/
+wandb/
+mlruns/
+logs/

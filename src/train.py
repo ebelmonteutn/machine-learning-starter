@@ -1,3 +1,14 @@
+# train.py
+# Este script se encarga de entrenar un modelo de machine learning desde cero, incluyendo: 
+# - Carga de datos
+# - Preprocesamiento
+# - División en train/test
+# - Entrenamiento
+# - Evaluación
+# - Guardado del modelo
+# Autor: Enzo Nicolas Belmonte
+# Fecha: 2024-03-21
+# Licencia: MIT License. Ver LICENSE para más detalles.
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline

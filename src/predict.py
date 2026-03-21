@@ -1,3 +1,8 @@
+# predict.py
+# Este script se encarga de cargar un modelo previamente entrenado y realizar predicciones sobre nuevos datos.
+# Autor: Enzo Nicolas Belmonte
+# Fecha: 2024-03-21
+# Licencia: MIT License. Ver LICENSE para más detalles.
 import joblib
 import pandas as pd
 
@@ -41,7 +46,9 @@ def main():
 
     prediction = predict(model, new_data)
 
+    print("--------------------------|--------------------------")
     print("Prediction:", prediction)
+    print("--------------------------|--------------------------")
 
 
 if __name__ == "__main__":

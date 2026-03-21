@@ -117,11 +117,16 @@ def evaluate(model, X_test, y_test):
     Métricas:
     - Accuracy: proporción de aciertos
     - Classification report: precision, recall, f1-score
+    - r2 Score: coeficiente de determinación
     """
     y_pred = model.predict(X_test)
 
+    print("--------------------------|--------------------------")
+    print("Métricas de Evaluación:")
     print("Accuracy:", accuracy_score(y_test, y_pred))
+    print("r2 Score:", r2_score(y_test, y_pred))
     print(classification_report(y_test, y_pred))
+    print("--------------------------|--------------------------")
 
 
 # ==============================
